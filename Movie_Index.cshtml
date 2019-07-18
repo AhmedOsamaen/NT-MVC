@@ -1,0 +1,14 @@
+﻿@model NT_MVC_Task.Models.Movies
+@{
+    ViewBag.Title = "Movie_Index";
+    
+}
+
+<h2>Spider Man Cast</h2>
+<h3>Movie name: @Model.name </h3>
+<h4>CAST:</h4>
+@foreach(var item in Model.cust_list)
+{
+    <p>@item.fname @item.lname</p>
+}
+
